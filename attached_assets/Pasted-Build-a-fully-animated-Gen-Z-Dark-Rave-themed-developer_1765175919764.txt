@@ -1,0 +1,186 @@
+Build a fully animated, Gen-Z “Dark Rave” themed developer portfolio using:
+
+- Next.js (App Router)
+- TypeScript
+- TailwindCSS
+- Three.js
+- Barba.js
+- Framer Motion
+- (Optional) GSAP for micro-effects
+
+────────────────────────────────────────
+PROJECT GOAL
+────────────────────────────────────────
+Create a modern, unique, high-performance portfolio website that displays:
+- Skills
+- Projects
+- Experience
+- Education
+- Contact
+
+Theme: “GEN-Z DARK RAVE”
+Style: neon, cyberpunk, glitchy, holographic, high-contrast black/purple/blue palette.
+
+────────────────────────────────────────
+REQUIRED TECH + SETUP
+────────────────────────────────────────
+1. Initialize a Next.js + TypeScript project (App Router).
+2. Install:
+   - three
+   - barba.js
+   - framer-motion
+   - tailwindcss, postcss, autoprefixer
+   - (optional) gsap
+3. Configure Tailwind with custom neon colors + dark rave palette.
+4. Create `globals.css` with:
+   - noise texture overlay
+   - neon glow utilities
+   - rave grid background
+
+────────────────────────────────────────
+SITE STRUCTURE
+────────────────────────────────────────
+/app
+  layout.tsx
+  page.tsx (Home)
+  /projects
+      page.tsx
+  /skills
+      page.tsx
+  /experience
+      page.tsx
+  /education
+      page.tsx
+  /contact
+      page.tsx
+/components
+  Navbar
+  Footer
+  MagneticButton
+  NeonCursor
+  HologramCard
+  SectionWrapper
+  Timeline
+  RaveGridBackground
+  ThreeCanvas
+  AnimatedHeading
+
+────────────────────────────────────────
+HOME PAGE REQUIREMENTS
+────────────────────────────────────────
+Hero Section:
+- Three.js interactive scene:
+  * floating neon particles reacting to mouse
+  * OR a glowing rotating energy sphere
+- Animated neon heading (Framer Motion)
+- Short intro text (placeholder)
+- CTA buttons with magnetic effect
+
+Background:
+- animated rave grid
+- neon noise overlay
+- custom rave cursor
+
+────────────────────────────────────────
+PAGE ANIMATIONS & TRANSITIONS
+────────────────────────────────────────
+Implement Barba.js transitions:
+- fade-in/out between pages
+- glitch effect when entering project details
+- smooth scroll restoration
+
+All sections must use:
+- reveal animations (Framer Motion)
+- parallax mouse movement
+- neon glowing hover effects
+
+────────────────────────────────────────
+PROJECTS PAGE REQUIREMENTS
+────────────────────────────────────────
+- Grid of hologram neon project cards
+- Each card:
+  * title
+  * short description
+  * tech stack badges
+  * glitch hover effect
+  * 3D tilt on hover
+- Clicking opens dedicated animated page (or modal)
+
+Use placeholder project data.
+
+────────────────────────────────────────
+SKILLS PAGE REQUIREMENTS
+────────────────────────────────────────
+- Categorized neon skill grid:
+  * Frontend
+  * Backend
+  * Databases
+  * Tools
+- Each item should animate in on reveal.
+
+────────────────────────────────────────
+EXPERIENCE PAGE REQUIREMENTS
+────────────────────────────────────────
+- Vertical neon timeline component
+- Each entry:
+  * role
+  * company
+  * dates
+  * bullet points (placeholder)
+
+────────────────────────────────────────
+EDUCATION PAGE REQUIREMENTS
+────────────────────────────────────────
+- Simple hologram-style timeline similar to experience.
+
+────────────────────────────────────────
+CONTACT PAGE REQUIREMENTS
+────────────────────────────────────────
+- Simple neon form with:
+  * name
+  * email
+  * message
+- Animated submit button
+- Fake handler placeholder
+
+────────────────────────────────────────
+GLOBAL FEATURES
+────────────────────────────────────────
+1. Neon custom cursor:
+   - glow
+   - trailing light
+2. Magnetic buttons throughout the site.
+3. Preloader:
+   - rave pulse animation.
+4. Easter egg:
+   - Konami code triggers “RAVE MODE”
+     (rapid color pulses + glitch text).
+
+────────────────────────────────────────
+PLACEHOLDER CONTENT
+────────────────────────────────────────
+Use placeholder data for:
+- name
+- role
+- about text
+- skills
+- experience
+- education
+- projects
+
+(I will replace content myself later.)
+
+────────────────────────────────────────
+OUTPUT REQUIREMENTS
+────────────────────────────────────────
+1. Generate full working codebase.
+2. Include all animations, transitions, components, and design systems.
+3. Add clean comments explaining:
+   - Three.js scene setup
+   - Barba.js transition handling
+   - Animation logic
+4. Provide instructions to run and edit the project.
+
+────────────────────────────────────────
+END OF PROMPT
+────────────────────────────────────────
