@@ -90,8 +90,8 @@ app.use((req, res, next) => {
     host: string;
     reusePort?: boolean;
   } = {
-    port,
-    host: "0.0.0.0",
+      port,
+      host: "0.0.0.0",
   };
 
   // SO_REUSEPORT is not supported on Windows; avoid ENOTSUP
@@ -100,6 +100,6 @@ app.use((req, res, next) => {
   }
 
   httpServer.listen(listenOptions, () => {
-    log(`serving on port ${port}`);
+      log(`serving on port ${port}`);
   });
 })();
