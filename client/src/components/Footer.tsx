@@ -152,6 +152,10 @@ export function Footer() {
             Built with neon dreams and caffeine
           </p>
         </div>
+
+        <div className="mt-6 text-center text-sm text-muted-foreground">
+          Thank you for visiting my portfolio
+        </div>
       </div>
     </footer>
   );

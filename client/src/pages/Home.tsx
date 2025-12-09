@@ -128,14 +128,11 @@ export default function Home() {
               className="space-y-6 text-muted-foreground text-lg leading-relaxed"
             >
               <p>
-                Hi, I'm <span className="text-neon-purple font-semibold">Isha Singh</span>, a BCA Final Year Student with a passion for programming and 
-                web development. I'm currently pursuing my Bachelor's in Computer Applications 
-                and building my skills in various programming languages and technologies.
+                Hi, I'm <span className="text-neon-purple font-semibold">Isha Singh</span>, a BCA final year student passionate about software development.
               </p>
               <p>
-                I'm eager to learn and grow in the field of software development, 
-                constantly working on projects to enhance my skills and gain practical 
-                experience in building applications.
+                I love learning new technologies and improving my development skills, always
+                exploring ways to build better, more impactful applications.
               </p>
             </motion.div>
           </div>

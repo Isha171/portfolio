@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Send, MapPin, Clock, CheckCircle } from 'lucide-react';
+import { Mail, Send, MapPin, Clock, CheckCircle, Phone, Github } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -132,12 +132,39 @@ export default function Contact() {
               </div>
 
               <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-md flex items-center justify-center bg-neon-purple/10 border border-neon-purple/30">
+                  <Github className="w-5 h-5 text-neon-purple" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">GitHub</p>
+                  <a
+                    href="https://github.com/isha17"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground font-medium hover:text-neon-purple transition-colors"
+                  >
+                    github.com/isha17
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-md flex items-center justify-center bg-neon-pink/10 border border-neon-pink/30">
+                  <Phone className="w-5 h-5 text-neon-pink" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Phone</p>
+                  <p className="text-foreground font-medium">9341011817</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-md flex items-center justify-center bg-neon-blue/10 border border-neon-blue/30">
                   <MapPin className="w-5 h-5 text-neon-blue" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="text-foreground font-medium">San Francisco, CA</p>
+                  <p className="text-foreground font-medium">Anisabad</p>
                 </div>
               </div>
 
