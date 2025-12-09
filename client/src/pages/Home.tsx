@@ -36,11 +36,20 @@ export default function Home() {
             as="h1"
             glitch
             neonColor="purple"
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4"
             data-testid="text-hero-title"
           >
-            CREATIVE DEVELOPER
+            ISHA SINGH
           </AnimatedHeading>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className="text-2xl md:text-3xl lg:text-4xl font-bold text-neon-purple mb-6"
+            data-testid="text-hero-subtitle-name"
+          >
+            CREATIVE DEVELOPER
+          </motion.p>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -109,7 +118,7 @@ export default function Home() {
             className="space-y-6 text-muted-foreground text-lg leading-relaxed"
           >
             <p>
-              I'm a passionate full-stack developer with a love for creating 
+              Hi, I'm <span className="text-neon-purple font-semibold">Isha Singh</span>, a passionate full-stack developer with a love for creating 
               visually stunning and highly performant web applications. My 
               journey in tech started with curiosity and has evolved into a 
               career focused on pushing the boundaries of what's possible on 

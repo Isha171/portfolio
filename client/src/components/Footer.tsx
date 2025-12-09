@@ -142,8 +142,8 @@ export function Footer() {
             className="text-sm text-muted-foreground cursor-default"
             whileHover={{ x: 5 }}
           >
-            <span className="glitch-text" data-text={`© ${new Date().getFullYear()} DEV.RAVE`}>
-              © {new Date().getFullYear()} DEV.RAVE
+            <span className="glitch-text" data-text={`© ${new Date().getFullYear()} Isha Singh`}>
+              © {new Date().getFullYear()} Isha Singh
             </span>
             {' '}— All rights reserved.
           </motion.p>
