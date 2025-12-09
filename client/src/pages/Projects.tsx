@@ -26,6 +26,14 @@ const projects: Project[] = [
     featured: true,
   },
   {
+    id: '7',
+    title: 'Cold Drink Management System',
+    description:
+      'Final year project built with Visual Basic 6.0 and SQL. Includes inventory tracking, billing, product category management, and user authentication.',
+    tech: ['VB 6.0', 'SQL Database', 'Inventory', 'Billing'],
+    featured: true,
+  },
+  {
     id: '2',
     title: 'Quantum Dashboard',
     description: 'Real-time analytics dashboard with interactive 3D data visualizations and predictive insights.',
