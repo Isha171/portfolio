@@ -28,7 +28,7 @@ export default function Home() {
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neon-purple/10 border border-neon-purple/30 text-sm text-neon-purple">
               <Sparkles className="w-4 h-4" />
-              Available for hire
+              BCA Final Year Student
             </span>
           </motion.div>
 
@@ -48,7 +48,7 @@ export default function Home() {
             className="text-2xl md:text-3xl lg:text-4xl font-bold text-neon-purple mb-6"
             data-testid="text-hero-subtitle-name"
           >
-            CREATIVE DEVELOPER
+            BCA Student | Aspiring Developer
           </motion.p>
 
           <motion.p
@@ -58,9 +58,9 @@ export default function Home() {
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
             data-testid="text-hero-subtitle"
           >
-            I craft immersive digital experiences with cutting-edge 
-            technologies. Specializing in modern web development, 
-            interactive 3D, and creative coding.
+            Passionate about programming and web development. Currently learning 
+            and building projects with C, C++, VB 6.0, HTML, CSS, and SQL to 
+            enhance my skills as an aspiring developer.
           </motion.p>
 
           <motion.div
@@ -118,17 +118,14 @@ export default function Home() {
             className="space-y-6 text-muted-foreground text-lg leading-relaxed"
           >
             <p>
-              Hi, I'm <span className="text-neon-purple font-semibold">Isha Singh</span>, a passionate full-stack developer with a love for creating 
-              visually stunning and highly performant web applications. My 
-              journey in tech started with curiosity and has evolved into a 
-              career focused on pushing the boundaries of what's possible on 
-              the web.
+              Hi, I'm <span className="text-neon-purple font-semibold">Isha Singh</span>, a BCA Final Year Student with a passion for programming and 
+              web development. I'm currently pursuing my Bachelor's in Computer Applications 
+              and building my skills in various programming languages and technologies.
             </p>
             <p>
-              When I'm not coding, you'll find me exploring the latest in 
-              creative technology, contributing to open-source projects, or 
-              diving deep into the world of generative art and interactive 
-              experiences.
+              I'm eager to learn and grow in the field of software development, 
+              constantly working on projects to enhance my skills and gain practical 
+              experience in building applications.
             </p>
           </motion.div>
         </div>
@@ -149,18 +146,18 @@ export default function Home() {
             {[
               {
                 icon: Code,
-                title: 'Frontend Development',
-                description: 'Building responsive, performant interfaces with React, Next.js, and modern CSS.',
+                title: 'Programming',
+                description: 'Working with C, C++, and VB 6.0 to build applications and solve problems.',
               },
               {
                 icon: Rocket,
-                title: 'Backend Systems',
-                description: 'Designing scalable APIs and services with Node.js, Python, and cloud platforms.',
+                title: 'Web Development',
+                description: 'Creating web pages and interfaces using HTML and CSS, learning modern web technologies.',
               },
               {
                 icon: Sparkles,
-                title: 'Creative Coding',
-                description: 'Crafting interactive 3D experiences with Three.js, WebGL, and generative art.',
+                title: 'Database Management',
+                description: 'Managing and querying databases using SQL, understanding data structures and relationships.',
               },
             ].map((item, index) => (
               <motion.div

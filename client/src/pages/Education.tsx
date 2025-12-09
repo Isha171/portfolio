@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { GraduationCap, Award, BookOpen } from 'lucide-react';
+import { GraduationCap } from 'lucide-react';
 import { AnimatedHeading } from '@/components/AnimatedHeading';
 import { SectionWrapper } from '@/components/SectionWrapper';
 import { Timeline } from '@/components/Timeline';
@@ -7,54 +7,16 @@ import { Timeline } from '@/components/Timeline';
 const educationItems = [
   {
     id: '1',
-    title: 'Master of Science in Computer Science',
-    subtitle: 'Tech University',
-    date: '2014 - 2016',
-    description: 'Specialized in Human-Computer Interaction and Web Technologies.',
+    title: 'Bachelor of Computer Applications (BCA)',
+    subtitle: 'Final Year Student',
+    date: 'Pursuing',
+    description: 'Currently in final year, learning computer science fundamentals, programming languages, and software development.',
     bullets: [
-      'Thesis: "Immersive Web Experiences Using WebGL and Spatial Computing"',
-      'GPA: 3.9/4.0 - Graduated with Honors',
-      'Research Assistant in the Interactive Media Lab',
+      'Learning programming languages: C, C++, VB 6.0',
+      'Web development: HTML, CSS',
+      'Database management: SQL',
+      'Building projects to enhance practical skills',
     ],
-  },
-  {
-    id: '2',
-    title: 'Bachelor of Science in Software Engineering',
-    subtitle: 'State University',
-    date: '2010 - 2014',
-    description: 'Foundation in computer science principles and software development.',
-    bullets: [
-      'Dean\'s List for Academic Excellence (All semesters)',
-      'President of the Computer Science Student Association',
-      'Senior Project: Real-time Multiplayer Game Engine',
-    ],
-  },
-];
-
-const certifications = [
-  {
-    title: 'AWS Certified Solutions Architect',
-    issuer: 'Amazon Web Services',
-    year: '2023',
-    icon: Award,
-  },
-  {
-    title: 'Google Cloud Professional Developer',
-    issuer: 'Google Cloud',
-    year: '2022',
-    icon: Award,
-  },
-  {
-    title: 'Meta Frontend Developer Certificate',
-    issuer: 'Meta (Coursera)',
-    year: '2022',
-    icon: BookOpen,
-  },
-  {
-    title: 'Certified Kubernetes Administrator',
-    issuer: 'CNCF',
-    year: '2021',
-    icon: Award,
   },
 ];
 
@@ -89,8 +51,8 @@ export default function Education() {
             transition={{ delay: 0.3 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            My academic journey and continuous learning through certifications 
-            and professional development.
+            My academic journey as a BCA student, continuously learning and building 
+            practical skills in programming and software development.
           </motion.p>
         </div>
 
@@ -109,58 +71,6 @@ export default function Education() {
           />
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="text-2xl font-bold text-neon-pink mb-8 neon-text-pink">
-            Certifications
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {certifications.map((cert, index) => (
-              <motion.div
-                key={cert.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                whileHover={{ scale: 1.02 }}
-                className="relative rounded-md bg-card/80 backdrop-blur-sm border border-neon-purple/30 p-6 hover:border-neon-purple/60 transition-all duration-300 group"
-                data-testid={`card-cert-${index}`}
-              >
-                <div 
-                  className="absolute inset-0 rounded-md opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
-                  style={{
-                    background: 'linear-gradient(135deg, rgba(168, 85, 247, 0.05), transparent)',
-                  }}
-                />
-
-                <div className="relative z-10 flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-md flex items-center justify-center bg-neon-purple/10 border border-neon-purple/30 flex-shrink-0">
-                    <cert.icon className="w-6 h-6 text-neon-purple" />
-                  </div>
-
-                  <div className="flex-grow">
-                    <div className="flex flex-wrap items-center justify-between gap-2 mb-1">
-                      <h3 className="font-bold text-foreground">
-                        {cert.title}
-                      </h3>
-                      <span className="text-sm font-mono px-2 py-0.5 rounded bg-neon-blue/10 text-neon-blue border border-neon-blue/30">
-                        {cert.year}
-                      </span>
-                    </div>
-                    <p className="text-sm text-muted-foreground">
-                      {cert.issuer}
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
       </SectionWrapper>
     </div>
   );
