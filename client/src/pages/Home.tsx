@@ -100,7 +100,17 @@ export default function Home() {
       </section>
 
       <SectionWrapper className="py-24 px-6" data-testid="section-about">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-[320px,1fr] gap-10 items-center text-center md:text-left">
+          <div className="relative mx-auto h-[320px] w-[240px] overflow-hidden rounded-xl border border-border/60 shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
+            <img
+              src="/ishika.jpg"
+              alt="Isha Singh"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent pointer-events-none" />
+          </div>
+
           <AnimatedHeading
             as="h2"
             neonColor="blue"
@@ -109,25 +119,26 @@ export default function Home() {
           >
             ABOUT ME
           </AnimatedHeading>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="space-y-6 text-muted-foreground text-lg leading-relaxed"
-          >
-            <p>
-              Hi, I'm <span className="text-neon-purple font-semibold">Isha Singh</span>, a BCA Final Year Student with a passion for programming and 
-              web development. I'm currently pursuing my Bachelor's in Computer Applications 
-              and building my skills in various programming languages and technologies.
-            </p>
-            <p>
-              I'm eager to learn and grow in the field of software development, 
-              constantly working on projects to enhance my skills and gain practical 
-              experience in building applications.
-            </p>
-          </motion.div>
+          <div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="space-y-6 text-muted-foreground text-lg leading-relaxed"
+            >
+              <p>
+                Hi, I'm <span className="text-neon-purple font-semibold">Isha Singh</span>, a BCA Final Year Student with a passion for programming and 
+                web development. I'm currently pursuing my Bachelor's in Computer Applications 
+                and building my skills in various programming languages and technologies.
+              </p>
+              <p>
+                I'm eager to learn and grow in the field of software development, 
+                constantly working on projects to enhance my skills and gain practical 
+                experience in building applications.
+              </p>
+            </motion.div>
+          </div>
         </div>
       </SectionWrapper>
 
